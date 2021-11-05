@@ -3,7 +3,7 @@
     <div
       class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
     >
-      <div class="pl-4 flex items-center">
+      <div class="p-1 pl-4 flex items-center">
         <logo :isStickable="true" :isSticky="isSticky" />
       </div>
       <div class="block lg:hidden pr-4">
@@ -27,7 +27,7 @@
         class="w-full flex-grow lg:flex lg:items-center lg:w-auto lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
       >
         <ul class="list-reset lg:flex justify-end flex-1 items-center">
-          <li class="mr-3">
+          <!-- <li class="mr-3">
             <a
               class="inline-block py-2 px-4 text-black font-bold no-underline"
               href="#"
@@ -47,13 +47,19 @@
               href="#"
               >link</a
             >
-          </li>
+          </li> -->
         </ul>
         <button
           :class="navActionClassList"
-          class="mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75"
+          class="mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 alt-text"
+          onclick="
+              Calendly.initPopupWidget({
+                url: 'https://calendly.com/buywithpoly/intro'
+              })
+              return false
+            "
         >
-          Action
+          Schedule a Demo
         </button>
       </div>
     </div>
@@ -77,7 +83,7 @@ export default {
   },
   computed: {
     isSticky() {
-      return this.scrollY > 10
+      return true
     },
     headerClassList() {
       return this.isSticky ? 'bg-white shadow' : ''

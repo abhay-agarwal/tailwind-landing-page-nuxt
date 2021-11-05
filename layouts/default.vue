@@ -31,8 +31,16 @@ html {
   box-sizing: border-box;
 }
 
+.alt-text {
+  font-family: 'Avenue', Arial, sans-serif;
+}
+
+.alt-text-shadow {
+  text-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
 .gradient {
   /* background: linear-gradient(90deg, #6200ee 0%, #03dac5 100%);  */
-  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  background: linear-gradient(to right, #ffca78, #ff5f29);
 }
 </style>

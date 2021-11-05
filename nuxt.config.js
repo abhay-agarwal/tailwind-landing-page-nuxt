@@ -14,7 +14,24 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/favicon-512x512.png',
+        sizes: '512x512'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://assets.calendly.com/assets/external/widget.css'
+      }
+    ],
+    script: [
+      {
+        src: 'https://assets.calendly.com/assets/external/widget.js',
+        type: 'text/javascript'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -33,12 +50,13 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/svg'
   ],
   /*
    ** Nuxt.js modules
    */
-  modules: ['nuxt-svg-loader'],
+  modules: [],
   purgeCSS: {
     whitelist: ['hidden'],
     whitelistPatterns: [/md:w-[1-6]/]
@@ -50,6 +68,10 @@ export default {
     /*
      ** You can extend webpack config here
      */
+    filenames: {
+      app: ({ isDev }) => (isDev ? '[name].[hash].js' : '[chunkhash].js'),
+      chunk: ({ isDev }) => (isDev ? '[name].[hash].js' : '[chunkhash].js')
+    },
     extend(config, ctx) {
       loaders: {
         file: {

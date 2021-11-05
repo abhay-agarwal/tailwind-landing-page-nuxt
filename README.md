@@ -24,6 +24,7 @@ $ npm run generate
 ```
 
 ## Test Coverage
+
 | File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s |
 | ----------------------- | ------- | -------- | ------- | ------- | ----------------- |
 | All files               | 100     | 100      | 100     | 100     |                   |

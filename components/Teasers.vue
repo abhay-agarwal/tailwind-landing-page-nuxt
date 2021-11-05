@@ -1,10 +1,10 @@
 <template>
-  <section class="bg-white border-b py-8">
+  <section class="bg-gray-100 py-8">
     <div class="container mx-auto flex flex-wrap pt-4 pb-12">
       <h1
-        class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
+        class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800 alt-text"
       >
-        Title
+        Built For Any Brand
       </h1>
       <div class="w-full mb-4">
         <div
@@ -12,27 +12,34 @@
         ></div>
       </div>
       <teaser-column :rows="3" action="Action">
-        <template v-slot:overline>xGETTING STARTED</template>
-        <template v-slot:headline>Lorem ipsum dolor sit amet</template>
+        <img
+          src="~assets/svg/np_technical-support_4116557_000000.svg"
+          alt
+          slot="svg"
+        />
+        <template v-slot:overline>PIM & CMS Integration</template>
+        <template v-slot:headline>Automatic Inventory & Pricing</template>
         <template v-slot:content
-          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
-          ipsum eu nunc commodo posuere et sit amet ligula.</template
+          >Connect your PIM and CMS, and Poly automates the rest. Create a fully
+          managed DTC channel with zero overhead.</template
         >
       </teaser-column>
       <teaser-column :rows="3" action="Action">
-        <template v-slot:overline>xGETTING STARTED</template>
-        <template v-slot:headline>Lorem ipsum dolor sit amet</template>
+        <img src="~assets/svg/np_funnel_4102878_000000.svg" alt slot="svg" />
+        <template v-slot:overline>Flexible Analytics</template>
+        <template v-slot:headline>Enrich Your Marketing Funnels</template>
         <template v-slot:content
-          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
-          ipsum eu nunc commodo posuere et sit amet ligula.</template
+          >Get real conversion data, and augment your existing funnels with
+          better insight from what shoppers actually buy.</template
         >
       </teaser-column>
       <teaser-column :rows="3" action="Action">
-        <template v-slot:overline>xGETTING STARTED</template>
-        <template v-slot:headline>Lorem ipsum dolor sit amet</template>
+        <img src="~assets/svg/np_shipping_1968202_000000.svg" alt slot="svg" />
+        <template v-slot:overline>No-Hassle Fulfillment</template>
+        <template v-slot:headline>We Handle the Shipping Lifecycle</template>
         <template v-slot:content
-          >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
-          ipsum eu nunc commodo posuere et sit amet ligula.</template
+          >Poly is a fully managed solution that takes care of shipment
+          tracking, returns, chargebacks, fraud, and support.</template
         >
       </teaser-column>
     </div>

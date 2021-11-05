@@ -13,40 +13,27 @@
               <a
                 href="#"
                 class="no-underline hover:underline text-gray-800 hover:text-orange-500"
-                >FAQ</a
+                onclick="
+              Calendly.initPopupWidget({
+                url: 'https://calendly.com/buywithpoly/intro'
+              })
+              return false
+            "
+                >Schedule a Demo</a
               >
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <a
-                href="#"
+                href="https://docs.polytopal.ai/"
                 class="no-underline hover:underline text-gray-800 hover:text-orange-500"
-                >Help</a
+                >Documentation</a
               >
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <a
-                href="#"
+                href="mailto:support@polytopal.ai"
                 class="no-underline hover:underline text-gray-800 hover:text-orange-500"
                 >Support</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">Legal</p>
-          <ul class="list-reset mb-6">
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a
-                href="#"
-                class="no-underline hover:underline text-gray-800 hover:text-orange-500"
-                >Terms</a
-              >
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a
-                href="#"
-                class="no-underline hover:underline text-gray-800 hover:text-orange-500"
-                >Privacy</a
               >
             </li>
           </ul>
@@ -56,21 +43,21 @@
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <a
-                href="#"
+                href="http://facebook.com/polytopalAI"
                 class="no-underline hover:underline text-gray-800 hover:text-orange-500"
                 >Facebook</a
               >
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/polytopal"
                 class="no-underline hover:underline text-gray-800 hover:text-orange-500"
                 >Linkedin</a
               >
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <a
-                href="#"
+                href="http://twitter.com/polytopal_ai"
                 class="no-underline hover:underline text-gray-800 hover:text-orange-500"
                 >Twitter</a
               >
@@ -82,33 +69,22 @@
           <ul class="list-reset mb-6">
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <a
-                href="#"
+                href="https://polytopal.ai/"
                 class="no-underline hover:underline text-gray-800 hover:text-orange-500"
-                >Official Blog</a
+                >Polytopal</a
               >
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
               <a
-                href="#"
+                href="mailto:hello@polytopal.ai"
                 class="no-underline hover:underline text-gray-800 hover:text-orange-500"
-                >About Us</a
-              >
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a
-                href="#"
-                class="no-underline hover:underline text-gray-800 hover:text-orange-500"
-                >Contact</a
+                >Contact Us</a
               >
             </li>
           </ul>
         </div>
       </div>
     </div>
-
-    <a href="https://www.freepik.com/free-photos-vectors/background"
-      >Background vector created by freepik - www.freepik.com</a
-    >
   </footer>
 </template>
 
